@@ -1,4 +1,4 @@
-# Odoo AI Assistant
+# Odoo Sense
 
 An intelligent AI-powered assistant that integrates with Odoo ERP to provide natural language interactions for querying and managing various Odoo modules. This project combines the power of Google's Gemini AI with Odoo's comprehensive ERP capabilities.
 
@@ -161,4 +161,4 @@ For support, please:
 
 ---
 
-Made with ❤️ by the Odoo AI Assistant Team 
+Made with ❤️ by Shamlan Arshad
