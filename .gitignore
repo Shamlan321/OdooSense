@@ -1,0 +1,131 @@
+# Environment and Configuration
+.env
+.env.*
+!.env.example
+*.config
+config.ini
+*.cfg
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+.ENV/
+pythonenv*/
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+.project
+.settings/
+.classpath
+.c9/
+*.launch
+.settings/
+*.tmproj
+.history/
+
+# Logs and Databases
+*.log
+logs/
+log/
+*.sqlite
+*.db
+*.sql
+*.dump
+
+# Project specific files
+# Generated reports
+odoo_inspection_report*.json
+module_access_report*.json
+enhanced_module_report*.json
+odoo_cloud_report*.json
+local_odoo_report*.json
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Documentation
+docs/_build/
+site/
+
+# Test coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Backup files
+*.bak
+*.backup
+*~
+*.old 
