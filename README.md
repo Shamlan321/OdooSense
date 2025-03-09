@@ -29,8 +29,8 @@ An intelligent AI-powered assistant that integrates with Odoo ERP to provide nat
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/odoo-ai-assistant.git
-cd odoo-ai-assistant
+git clone https://github.com/Shamlan321/OdooSense.git
+cd OdooSense
 ```
 
 2. Install required packages:
@@ -157,7 +157,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For support, please:
 1. Check existing issues
 2. Create a new issue with detailed information
-3. Join our community discussions
 
 ---
 
