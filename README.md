@@ -51,7 +51,7 @@ GEMINI_API_KEY=your_gemini_api_key
 
 1. Start the assistant:
 ```bash
-python odoo_llm_integration.py
+python odoosense.py
 ```
 
 2. Example queries:
@@ -97,7 +97,7 @@ The assistant recognizes different keywords for each module:
 ### Project Structure
 ```
 odoo-ai-assistant/
-├── odoo_llm_integration.py    # Main integration file
+├── odoosense.py    # Main integration file
 ├── odoo_inspector.py          # Module inspection tool
 ├── module_access_test.py      # Access testing utility
 ├── requirements.txt           # Python dependencies
