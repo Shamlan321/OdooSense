@@ -1,3 +1,5 @@
+![Alt Text](https://wheat-rail-813665.hostingersite.com/SENSE.png)
+
 # Odoo Sense
 
 An intelligent AI-powered assistant that integrates with Odoo ERP to provide natural language interactions for querying and managing various Odoo modules. This project combines the power of Google's Gemini AI with Odoo's comprehensive ERP capabilities.
