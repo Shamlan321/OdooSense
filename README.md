@@ -23,11 +23,46 @@ An intelligent AI-powered assistant that integrates with Odoo ERP to provide nat
 
 ### Prerequisites
 
+**For Docker (Recommended):**
+- Docker installed
+- Odoo ERP server (v14.0 or higher)
+- Google Cloud account for Gemini AI API
+
+**For Python Setup:**
 - Python 3.8+
 - Odoo ERP server (v14.0 or higher)
 - Google Cloud account for Gemini AI API
 
 ### Installation
+
+#### 🐳 Docker (Recommended - Zero Dependency Hassles)
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Shamlan321/OdooSense.git
+cd OdooSense
+```
+
+2. Create your `.env` file:
+```env
+ODOO_URL=http://localhost:8068
+ODOO_DB=your_database_name
+ODOO_USERNAME=your_username
+ODOO_PASSWORD=your_password
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+3. Run with Docker (one command, no setup):
+```bash
+# Quick start
+./docker-run.sh
+
+# Or manual
+docker build -t odoosense .
+docker run -i --rm --net=host --env-file .env odoosense
+```
+
+#### 🐍 Traditional Python Setup
 
 1. Clone the repository:
 ```bash
@@ -53,6 +88,10 @@ GEMINI_API_KEY=your_gemini_api_key
 
 1. Start the assistant:
 ```bash
+# Docker
+./docker-run.sh
+
+# Python
 python odoosense.py
 ```
 
@@ -98,13 +137,16 @@ The assistant recognizes different keywords for each module:
 
 ### Project Structure
 ```
-odoo-ai-assistant/
-├── odoosense.py    # Main integration file
-├── odoo_inspector.py          # Module inspection tool
-├── module_access_test.py      # Access testing utility
-├── requirements.txt           # Python dependencies
-├── .env                       # Environment configuration
-└── README.md                 # Documentation
+OdooSense/
+├── odoosense.py          # Main integration file
+├── odoo_inspector.py     # Module inspection tool
+├── module_access_test.py # Access testing utility
+├── requirements.txt      # Python dependencies
+├── Dockerfile           # Docker container setup
+├── docker-run.sh        # Docker convenience script
+├── .dockerignore        # Docker build exclusions
+├── .env                 # Environment configuration
+└── README.md           # Documentation
 ```
 
 ### Adding New Features
