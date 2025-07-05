@@ -9,7 +9,7 @@ License: MIT
 """
 
 import xmlrpc.client
-from google import genai
+import google.generativeai as genai
 import json
 from typing import List, Dict, Any
 from langchain.tools import Tool
@@ -836,7 +836,8 @@ def process_with_llm(data_response: Dict, user_query: str, conversation_history:
     """
     try:
         # Initialize Gemini client with API key from environment
-        client = genai.Client(api_key=gemini_api_key)
+        genai.configure(api_key=gemini_api_key)
+        model = genai.GenerativeModel('gemini-2.0-flash-exp')
         
         if not gemini_api_key:
             logger.error("Gemini API key not found in environment variables")
@@ -857,10 +858,7 @@ def process_with_llm(data_response: Dict, user_query: str, conversation_history:
             prompt = create_data_query_prompt(data_response, user_query, conversation_context)
 
         # Get response from Gemini
-        response = client.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=prompt
-        )
+        response = model.generate_content(prompt)
 
         # Add the interaction to conversation history
         conversation_history.add_message('user', user_query, data_response)
